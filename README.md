@@ -133,8 +133,8 @@ void LEDTask(void *pvParameters)
 Mechanical switches bounce when pressed, causing multiple rapid detections instead of a single press. This can lead to unintended multiple task executions.
 
 ### Solution
-Use software debounce by adding a delay after detecting a button press
-e.g.
+Use software debounce by adding a delay after detecting a button press  
+e.g.  
 ```C
 void Button_Handler(void *pvParameters)
 {
